@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <input>
+      <merchantAppCode>{{merchantAppCode}}</merchantAppCode>
+      <merchantAppPassword>{{merchantAppPassword}}</merchantAppPassword>
+      <merchantIPAddress>{{merchantIPAddress}}</merchantIPAddress>
+      <customerID>{{customerID}}</customerID>
+      <orderNumber>{{orderNumber}}</orderNumber>
+      <orderValue>{{orderValue}}</orderValue>
+      <returnURL>{{returnURL}}</returnURL>
+      <cancelURL>{{cancelURL}}</cancelURL>
+      <logoURL>{{logoURL}}</logoURL>
+      <productNo>
+        {{#productList}}
+        <xsd:string>{{productNo}}</xsd:string>
+        {{/productList}}
+      </productNo>
+      <productDesc>
+        {{#productList}}
+        <xsd:string>{{productDesc}}</xsd:string>
+        {{/productList}}
+      </productDesc>
+      <productQuant>
+        {{#productList}}
+        <xsd:int>{{productQuant}}</xsd:int>
+        {{/productList}}
+      </productQuant>
+      <productAmount>
+        {{#productList}}
+        <xsd:int>{{productAmount}}</xsd:int>
+        {{/productList}}
+      </productAmount>
+    </input>
+  </soap:Body>
+</soap:Envelope>
