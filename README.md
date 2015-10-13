@@ -79,7 +79,7 @@ kinerja.verifyPayment(request).then(function (response) {
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Petka Antonov
+Copyright (c) 2015 Timo Saikkonen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
