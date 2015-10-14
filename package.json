@@ -1,6 +1,6 @@
 {
   "name": "kinerjapay",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Unofficial KinerjaPay SDK",
   "main": "index.js",
   "scripts": {
